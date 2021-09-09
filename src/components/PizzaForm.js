@@ -1,6 +1,11 @@
 import React from "react";
 
 function PizzaForm() {
+
+const handleSubmit = () => {
+
+}
+
   return (
     <form onSubmit={null /*handle that submit*/}>
       <div className="form-row">
@@ -12,6 +17,7 @@ function PizzaForm() {
             placeholder="Pizza Topping"
           />
         </div>
+
         <div className="col">
           <select className="form-control" name="size">
             <option value="Small">Small</option>
@@ -19,6 +25,7 @@ function PizzaForm() {
             <option value="Large">Large</option>
           </select>
         </div>
+
         <div className="col">
           <div className="form-check">
             <input
@@ -29,6 +36,7 @@ function PizzaForm() {
             />
             <label className="form-check-label">Vegetarian</label>
           </div>
+
           <div className="form-check">
             <input
               className="form-check-input"
@@ -38,6 +46,7 @@ function PizzaForm() {
             />
             <label className="form-check-label">Not Vegetarian</label>
           </div>
+
         </div>
         <div className="col">
           <button type="submit" className="btn btn-success">
